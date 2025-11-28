@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Раритетные автомобили — Главная</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="img/cabriolet.png">
+</head>
+
+<body class="bg-light">
+
+  
+
+  <div class="container py-3">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-white border rounded mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Раритетные автомобили</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav"
+                aria-expanded="false" aria-label="Переключить навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="data.html">Данные</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Дополнительно</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Справка</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Карусель уменьшенная -->
+    <section class="mb-5 mt-3">
+      <h2 class="visually-hidden">Галерея автомобилей (carousel)</h2>
+
+      <div id="carsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carsCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carsCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carsCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <a href="ferrari-250-gto.html">
+              <img src="img/ferrari_250_gto.jpg" class="d-block w-100"
+                   style="max-height:420px; object-fit:cover;" alt="Ferrari 250 GTO">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ferrari 250 GTO</h5>
+              <p>Легендарный GT-автомобиль, созданный для гонок и ставший символом итальянского дизайна.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <a href="bugatti-type-57sc-atlantic.html">
+              <img src="img/bugatti_type57sc_atlantic.jpg" class="d-block w-100"
+                   style="max-height:420px; object-fit:cover;" alt="Bugatti Atlantic">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bugatti Type 57SC Atlantic</h5>
+              <p>Уникальное купе с алюминиевым кузовом и культовым «гребнем» по всей длине автомобиля.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <a href="mercedes-300sl-gullwing.html">
+              <img src="img/mercedes_300sl.jpg" class="d-block w-100"
+                   style="max-height:420px; object-fit:cover;" alt="Mercedes 300SL">
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mercedes-Benz 300SL Gullwing</h5>
+              <p>Первый дорожный автомобиль с прямым впрыском и узнаваемыми дверями-«крыльями чайки».</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- Круглые изображения — больше расстояние -->
+    <section class="mb-5">
+      <h2 class="visually-hidden">Круглая галерея автомобилей</h2>
+
+      <div class="d-flex flex-wrap justify-content-center">
+
+        <!-- Aston Martin DB4 GT Zagato -->
+        <div class="d-flex flex-column align-items-center mx-5 mb-4 text-center">
+          <a href="aston-db4-gt-zagato.html">
+            <img src="img/aston_db4_gt_zagato.jpg"
+                 class="rounded-circle img-fluid shadow mb-3"
+                 style="width:180px; height:180px; object-fit:cover;" alt="">
+          </a>
+          <h3 class="h6 mb-2">Aston Martin DB4 GT Zagato</h3>
+          <p class="small text-muted" style="max-width:260px;">
+            Облегчённая гоночная версия классического DB4, созданная ателье Zagato специально для соревнований
+            <a href="aston-db4-gt-zagato.html" class="text-decoration-underline">...</a>
+          </p>
+        </div>
+
+        <!-- Lamborghini Miura SV -->
+        <div class="d-flex flex-column align-items-center mx-5 mb-4 text-center">
+          <a href="lamborghini-miura-sv.html">
+            <img src="img/lamborghini_miura_sv.jpg"
+                 class="rounded-circle img-fluid shadow mb-3"
+                 style="width:180px; height:180px; object-fit:cover;" alt="">
+          </a>
+          <h3 class="h6 mb-2">Lamborghini Miura SV</h3>
+          <p class="small text-muted" style="max-width:260px;">
+            Финальная и самая совершенная модификация Miura, ставшая эталоном суперкаров 1970-х годов
+            <a href="lamborghini-miura-sv.html" class="text-decoration-underline">...</a>
+          </p>
+        </div>
+
+        <!-- Ferrari 250 GTO -->
+        <div class="d-flex flex-column align-items-center mx-5 mb-4 text-center">
+          <a href="ferrari-250-gto.html">
+            <img src="img/ferrari_250_gto.jpg"
+                 class="rounded-circle img-fluid shadow mb-3"
+                 style="width:180px; height:180px; object-fit:cover;" alt="">
+          </a>
+          <h3 class="h6 mb-2">Ferrari 250 GTO</h3>
+          <p class="small text-muted" style="max-width:260px;">
+            Один из самых ценных коллекционных автомобилей мира, созданный для гонок FIA
+            <a href="ferrari-250-gto.html" class="text-decoration-underline">...</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Карточки 3×3 с увеличенным текстом -->
+    <section class="pb-4">
+      <h2 class="visually-hidden">Сетка карточек автомобилей</h2>
+
+      <div class="row g-4">
+
+        <!-- 1 ряд -->
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 text-center">Jaguar XKSS</h3>
+              <p class="small text-muted">
+                Редчайшая дорожная модификация модели D-Type, созданная для самых требовательных клиентов.
+                Отличается лёгким кузовом, выдающейся динамикой и тесной связью с гоночными технологиями.
+              </p>
+              <button class="btn btn-primary btn-sm mt-auto align-self-end">Подробнее</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 text-center">Alfa Romeo 33 Stradale</h3>
+              <p class="small text-muted">
+                Один из самых изящных автомобилей XX века. Основан на гоночном прототипе Tipo 33,
+                сочетает компактные размеры, лёгкую конструкцию и революционный дизайн Franco Scaglione.
+              </p>
+              <button class="btn btn-primary btn-sm mt-auto align-self-end">Подробнее</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 text-center">Maserati 250F</h3>
+              <p class="small text-muted">
+                Исследовательский шедевр эпохи «золотых» гонок Формулы-1. На этом болиде
+                Хуан-Мануэль Фанхио одержал свои наиболее яркие победы, сделав модель легендарной.
+              </p>
+              <button class="btn btn-primary btn-sm mt-auto align-self-end">Подробнее</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2 ряд -->
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="row g-3 align-items-center flex-md-row-reverse">
+              <div class="col-md-5">
+                <img src="img/ferrari_250_gto.jpg" class="img-fluid rounded" alt="">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body d-flex flex-column text-md-end">
+                  <h3 class="h5">Ferrari 250 GTO</h3>
+                  <p class="small text-muted">
+                    Омологационный GT-болид, построенный для участия в специальных чемпионатах.
+                  </p>
+                  <button class="btn btn-primary btn-sm mt-auto ms-md-auto">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 text-center">Porsche 550 Spyder</h3>
+              <p class="small text-muted">
+                Лёгкий и манёвренный родстер, созданный специально для гонок классов
+                «меньших рабочих объёмов». Отличается низкой массой.
+              </p>
+              <button class="btn btn-primary btn-sm mt-auto align-self-end">Подробнее</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="row g-3 align-items-center flex-md-row-reverse">
+              <div class="col-md-5">
+                <img src="img/bugatti_type57sc_atlantic.jpg" class="img-fluid rounded" alt="">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body d-flex flex-column text-md-end">
+                  <h3 class="h5">Bugatti Atlantic</h3>
+                  <p class="small text-muted">
+                    Одна из самых редких моделей автомобилей Bugatti выпущенная на узкий рынок.
+                  </p>
+                  <button class="btn btn-primary btn-sm mt-auto ms-md-auto">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3 ряд -->
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 text-center">Mercedes-Benz 300SL</h3>
+              <p class="small text-muted">
+                Один из первых суперкаров мира: лёгкая пространственная рама, инновационный впрыск топлива
+                и характерные двери сделали модель.
+              </p>
+              <button class="btn btn-primary btn-sm mt-auto align-self-end">Подробнее</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="row g-3 align-items-center flex-md-row-reverse">
+              <div class="col-md-5">
+                <img src="img/lamborghini_miura_sv.jpg" class="img-fluid rounded" alt="">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body d-flex flex-column text-md-end">
+                  <h3 class="h5">Lamborghini Miura SV</h3>
+                  <p class="small text-muted">
+                    Впервые объединила среднемоторную компоновку, выдающийся дизайн.
+                  </p>
+                  <button class="btn btn-primary btn-sm mt-auto ms-md-auto">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <article class="card h-100 bg-light border-0">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 text-center">Aston Martin DB4 GT Zagato</h3>
+              <p class="small text-muted">
+                Лёгкая, быстрая и редкая версия DB4, подготовленная ателье Zagato.
+                Построена исключительно для гонок, сочетая стиль, мощность и аэродинамику.
+              </p>
+              <button class="btn btn-primary btn-sm mt-auto align-self-end">Подробнее</button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="border-top pt-3 mt-4 mb-2">
+      <p class="text-center small mb-0">
+        Сайт учебного назначения. Группа:
+        <b>Б9123-09.03.40 (1)</b>. Разработчик:
+        <b>Николенко Артём</b>
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
